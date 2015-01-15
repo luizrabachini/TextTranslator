@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sel_lang"
+          android:title="@string/lang_sel" >
+        <!-- "language" submenu -->
+        <menu>
+            <item android:id="@+id/lang_ptbr_enus"
+                  android:title="@string/lang_ptbr_enus" />
+            <item android:id="@+id/lang_enus_ptbr"
+                  android:title="@string/lang_enus_ptbr" />
+        </menu>
+    </item>
+    <item android:id="@+id/bench_test"
+          android:title="@string/bench_title" >
+        <!-- "language" submenu -->
+        <menu>
+            <item android:id="@+id/scan_folder"
+                  android:title="@string/scan_folder" />
+        </menu>
+    </item>
+</menu>

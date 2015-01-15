@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TextTranslator</string>
+    <string name="empty"></string>
+    <string name="processing">Processing, please wait&#8230;</string>
+	<string name="lang_sel">Language</string>
+	<string name="lang_ptbr_enus">Portuguese to English</string>
+	<string name="lang_enus_ptbr">English to Portuguese</string>
+    <string name="starting">Starting application&#8230;</string>
+    <string name="msg_offline">You are offline. Press refresh button to verify.</string>
+    <string name="msg_online">You are online. Starting application&#8230;</string>
+    <string name="dict_lang_ptbr_enus">Language: Portuguese to English</string>
+    <string name="accept_image">Text regions detected correctly?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="bench_title">Benchmark</string>
+    <string name="scan_folder">Scan Folder</string>
+	
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/sfv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right|top"
+        android:alpha="0.9"
+        android:orientation="vertical"
+        android:padding="4pt" >
+
+        <ImageButton
+            android:id="@+id/btn_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5pt"
+            android:background="@drawable/button_rounded_2"
+            android:contentDescription="@string/empty"
+            android:padding="8pt"
+            android:src="@drawable/ic_action_web_site" />
+
+        <ImageButton
+            android:id="@+id/btn_detect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4pt"
+            android:background="@drawable/button_rounded"
+            android:contentDescription="@string/empty"
+            android:padding="5pt"
+            android:src="@drawable/ic_action_crop" />
+
+        <ImageButton
+            android:id="@+id/btn_ocr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5pt"
+            android:background="@drawable/button_rounded"
+            android:contentDescription="@string/empty"
+            android:padding="4pt"
+            android:src="@drawable/ic_action_view_as_list" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:alpha="0.6"
+        android:background="#000000"
+        android:gravity="bottom|center_horizontal|center_vertical|end|right"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/btn_ambient_light"
+            android:layout_width="15pt"
+            android:layout_height="15pt"
+            android:layout_gravity="center"
+            android:layout_marginRight="2pt"
+            android:background="@drawable/switch_light"
+            android:contentDescription="@string/empty"
+            android:padding="2pt"
+            android:text="@string/empty"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ImageButton
+            android:id="@+id/btn_config_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5pt"
+            android:background="@drawable/button_none"
+            android:contentDescription="@string/empty"
+            android:padding="2pt"
+            android:src="@drawable/ic_action_settings" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_lang_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom"
+        android:padding="5pt"
+        android:text="@string/dict_lang_ptbr_enus"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+    <LinearLayout
+        android:id="@+id/pnl_processing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5pt"
+        android:visibility="gone" >
+
+       <TextView
+           android:id="@+id/txt_process_log"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom|left"
+           android:gravity="center_horizontal"
+           android:text="@string/processing"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/pnl_confirm_proc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:padding="5pt"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_confirm_proc"
+            android:layout_width="350dp"
+            android:layout_height="260dp"
+            android:gravity="center"
+            android:contentDescription="@string/empty" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5pt"
+                android:text="@string/accept_image"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <Button
+	            android:id="@+id/btn_cancel_proc"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/no" />
+            
+            <Button
+	            android:id="@+id/btn_confirm_proc"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/yes" />
+        
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+
