@@ -11,6 +11,7 @@ jni/.project
 jni/.DS_Store
 assets/
 Debug/
+Release/
 proguard.cfg
 local.properties
 proguard-project.txt
@@ -18,4 +19,5 @@ proguard-project.txt
 .classpath
 .externalToolBuilders
 .DS_Store
+.settings/
 *~

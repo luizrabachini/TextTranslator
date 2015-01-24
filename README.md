@@ -8,7 +8,7 @@ Third Party Resources
 ---------------------
 
 - Text Detection:
-Is based in work of Menglong Zhu on Literate PR2 architecture. A Android application, with contribution of Andrei Nagornyi, is available [here](https://github.com/dreamdragon/text-detection).
+Is based in work of Menglong Zhu on Literate PR2 architecture. An Android application, with contribution of Andrei Nagornyi, is available [here](https://github.com/dreamdragon/text-detection).
 
 - Text Extraction:
 The character recognition is executed by [Tesseract OCR](https://code.google.com/p/tesseract-ocr/), created by Ray Smith. To embed it in the application was used [tess-two](https://github.com/rmtheis/tess-two), developed by Robert Theis.
